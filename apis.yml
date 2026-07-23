@@ -1,7 +1,26 @@
 aid: aerialoop
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aerialoop.png
 name: Aerialoop
-description: Aerialoop is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Aerialoop is a drone technology and urban logistics company that designs, builds, and
+  operates intelligent aerial networks for cargo delivery, surveillance, and infrastructure inspection.
+  Founded in 2020 and headquartered in Miami with operations rooted in Quito, Ecuador, it is one of the
+  fastest-growing drone delivery operations in Latin America. Its ALT 6-8 delivery drone carries a 5kg
+  payload for urban logistics, while the ALT 6-ISR line adds HD, infrared, and night-vision cameras with
+  AI-powered intrusion detection; extended-range variants operate up to 120km using LEO satellite
+  connectivity for beyond-visual-line-of-sight flights. The company has completed over 50,000 flights
+  across six countries. Aerialoop is a Techstars Miami (powered by J.P. Morgan) portfolio company. It
+  currently publishes no public developer API, documentation, or SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/aerialoop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +33,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Drones
+- UAV
+- Logistics
+- Delivery
+- Surveillance
+- Aerial Robotics
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aerialoop-domain-security.yml
 - type: Website
-  url: https://aerialoop.com/
+  url: https://www.aerialoop.com/
+- type: Blog
+  url: https://www.aerialoop.com/news
+- type: Login
+  url: https://www.aerialoop.com/operators
+- type: LinkedIn
+  url: https://www.linkedin.com/company/aerialoop/
+- type: Twitter
+  url: https://x.com/Aerialoop_com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
